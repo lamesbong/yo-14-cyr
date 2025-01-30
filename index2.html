@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сохраним океан</title>
+    <link rel="stylesheet" href="/css/style2.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#главная">Главная</a></li>
+                <li><a href="#проблема">Проблема</a></li>
+                <li><a href="#решения">Решения</a></li>
+                <li><a href="#галерея">Галерея</a></li>
+                 <li><a href="#действие">Действие</a></li>
+                <li><a href="#контакты">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+         <section id="главная" class="page page-главная">
+        <div class="background-video-wrapper">
+            <video autoplay loop muted playsinline class="background-video">
+              <source src="video/ocean.mp4" type="video/mp4">
+              Ваш браузер не поддерживает видео.
+            </video>
+             </div>
+              
+            <div class="content">
+                <h1 class="title">Сохраним океан</h1>
+                <p class="subtitle">ЦУР 14: Сохранение и устойчивое использование океанов, морей и морских ресурсов.</p>
+                <a href="#проблема" class="button">Узнать больше</a>
+            </div>
+        </section>
+
+
+        <section id="проблема" class="page page-проблема">
+            <div class="container">
+                <h2 class="section-title">Угрозы океану</h2>
+                
+                <div class="section">
+                     <div class="icon-wrapper">
+                        <img src="/image/ГРЯЗЮКА.webp" alt="Иконка загрязнения пластиком" class="icon plastic-icon">
+                    </div>
+                    <h3 class="section-subtitle">Пластиковое загрязнение</h3>
+                    <p class="section-text">
+                        Пластиковое загрязнение является одной из самых серьезных угроз для океана. Миллионы тонн пластика попадают в воду ежегодно, нанося непоправимый вред морским обитателям и экосистемам.
+                    </p>
+                     <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                           <div class="swiper-slide"><img src="/image/52.webp" alt="Пластиковое загрязнение 1"></div>
+                            <div class="swiper-slide"><img src="/image/53.jpg" alt="Пластиковое загрязнение 2"></div>
+                             <div class="swiper-slide"><img src="/image/54.jpg" alt="Пластиковое загрязнение 3"></div>
+                        </div>
+                       <div class="swiper-pagination"></div>
+                      
+                    </div>
+                </div>
+
+               <div class="section">
+                   <div class="icon-wrapper">
+                        <img src="/image/scale_1200.png" alt="Иконка перелова рыбы" class="icon overfishing-icon">
+                    </div>
+                    <h3 class="section-subtitle">Перелов рыбы</h3>
+                    <p class="section-text">
+                        Перелов рыбы истощает популяции морских обитателей, нарушает баланс экосистем и ставит под угрозу продовольственную безопасность.
+                    </p>
+                      <div class="infographic-container">
+                         <div class="chart-container">
+                              <canvas id="myChart"></canvas>
+                         </div>
+                     </div>
+                </div>
+
+                <div class="section">
+                    <div class="icon-wrapper">
+                        <img src="/image/вода.webp" alt="Иконка повышения температуры воды" class="icon climate-icon">
+                    </div>
+                    <h3 class="section-subtitle">Изменение климата</h3>
+                    <p class="section-text">
+                        Изменение климата вызывает повышение температуры воды, кислотность океана и таяние ледников, что приводит к серьезным последствиям для морских экосистем и обитателей.
+                    </p>
+                    <div class="map-container">
+                        <img src="/image/мир во всем мире.webp" alt="Карта мира" class="map-image">
+                      </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="решения" class="page page-решения">
+            <div class="container">
+                <h2 class="section-title">Решения</h2>
+
+                 <div class="section">
+                     <img src="/image/clean.jpg" alt="Очистка пляжа" class="section-image cleanup-image">
+                    <h3 class="section-subtitle">Сокращение загрязнения</h3>
+                    <p class="section-text">
+                       Меры по сокращению загрязнения включают в себя отказ от одноразового пластика, улучшение системы переработки и очистки сточных вод, а также проведение регулярных акций по очистке пляжей.
+                    </p>
+                     <div class="icon-transition">
+                        <img src="/image/bottle.webp" alt="Пластиковая бутылка" class="icon-transition-image" id="icon1" style="display: block;">
+                           <img src="icons/recycle.png" alt="Переработка" class="icon-transition-image" id="icon2" style="display: none;">
+                     </div>
+                </div>
+                  <div class="section">
+                     <img src="/image/ribak.webp" alt="Устойчивое рыболовство" class="section-image sustainable-image">
+                    <h3 class="section-subtitle">Устойчивое рыболовство</h3>
+                    <p class="section-text">
+                        Устойчивое рыболовство предполагает использование экологичных методов ловли, контроль над промыслом и создание охраняемых морских территорий.
+                    </p>
+                      <div class="icon-transition">
+                        <img src="/image/сетка.webp" alt="Рыболовная сеть" class="icon-transition-image" id="icon3" style="display: block;">
+                        <img src="icons/certified.png" alt="Сертифицировано" class="icon-transition-image" id="icon4" style="display: none;">
+                    </div>
+                 </div>
+                
+                
+                  <div class="section">
+                      <img src="/image/ygoul.webp" alt="Возобновляемые источники энергии" class="section-image energy-image">
+                    <h3 class="section-subtitle">Экологичная энергия</h3>
+                    <p class="section-text">
+                      Переход на возобновляемые источники энергии, такие как солнечная, ветровая и гидроэнергетика, поможет сократить выбросы парниковых газов и замедлить изменение климата.
+                    </p>
+                     <div class="icon-transition">
+                         <img src="icons/fossil_fuel.png" alt="Ископаемое топливо" class="icon-transition-image" id="icon5" style="display: block;">
+                         <img src="icons/solar_panel.png" alt="Солнечная панель" class="icon-transition-image" id="icon6" style="display: none;">
+                    </div>
+                </div>
+             </div>
+         </section>
+
+         <section id="галерея" class="page page-галерея">
+            <div class="container">
+                <h2 class="section-title">Красота океана</h2>
+                <div class="gallery-container">
+                    <div class="gallery-item" data-image="images/coral1.jpg" data-description="Коралловый риф 1" data-location="Тихий океан">
+                         <img src="/image/колары.jpg" alt="Коралловый риф 1" >
+                    </div>
+                    <div class="gallery-item" data-image="images/fish1.jpg" data-description="Рыбы 1" data-location="Индийский океан">
+                       <img src="/image/рыбы.webp" alt="Рыбы 1">
+                    </div>
+                      <div class="gallery-item" data-image="images/dolphin1.jpg" data-description="Дельфин" data-location="Атлантический океан">
+                        <img src="/image/дельфнин.jpg" alt="Дельфин">
+                    </div>
+                    <div class="gallery-item" data-image="images/whale1.jpg" data-description="Кит" data-location="Арктический океан">
+                       <img src="/image/кит.jpg" alt="Кит">
+                     </div>
+                    <div class="gallery-item" data-image="images/turtle1.jpg" data-description="Черепаха" data-location="Средиземное море">
+                      <img src="/image/черепашка.png.webp" alt="Черепаха">
+                    </div>
+                    <div class="gallery-item" data-image="images/underwater1.jpg" data-description="Подводный пейзаж" data-location="Красное море">
+                       <img src="/image/море.png" alt="Подводный пейзаж">
+                     </div>
+                       <div class="gallery-item" data-image="images/fish2.jpg" data-description="Рыбы 2" data-location="Северный Ледовитый океан">
+                          <img src="/image/рыбки.png" alt="Рыбы 2">
+                       </div>
+                       <div class="gallery-item" data-image="images/fish2.jpg" data-description="Рыбы 2" data-location="Северный Ледовитый океан">
+                        <img src="/image/1.webp" alt="Рыбы 2">
+                     </div>
+                     <div class="gallery-item" data-image="images/fish2.jpg" data-description="Рыбы 2" data-location="Северный Ледовитый океан">
+                        <img src="/image/2.webp" alt="Рыбы 2">
+                     </div>
+                     <div class="gallery-item" data-image="images/fish2.jpg" data-description="Рыбы 2" data-location="Северный Ледовитый океан">
+                        <img src="/image/3.jpg" alt="Рыбы 2">
+                     </div>
+                    
+                 </div>
+                 <div class="fish-animation">
+                    <img class="fishman" src="/image/гиф.gif" alt="Плывущие рыбки">
+                </div>
+            </div>
+         </section>
+        
+        <section id="действие" class="page page-действие">
+            <div class="container">
+                <h2 class="section-title">Твой вклад</h2>
+
+                 <div class="section">
+                    <h3 class="section-subtitle">Узнай как помочь</h3>
+                    <p class="section-text">
+                       Ваше пожертвование поможет нам реализовывать важные проекты по защите морской среды.
+                    </p>
+                    <a href="#форма" class="button">Узнать как</a>
+                </div>
+                <div class="section">
+                  <h3 class="section-subtitle">Присоединись к сообществу</h3>
+                    <p class="section-text">
+                       Примите участие в волонтерских программах и помогите нам на деле.
+                    </p>
+                    <a href="#волонтеры" class="button">Стать волонтером</a>
+                 </div>
+                 <div class="section">
+                     <h3 class="section-subtitle">Расскажи друзьям</h3>
+                    <p class="section-text">
+                       Делитесь информацией в социальных сетях и привлекайте внимание к проблемам океана.
+                    </p>
+                    <div class="social-links">
+                        <a href="http://gymn.mstislavl.edu.by/main.aspx?ysclid=m6jg10pdgp131702128" class="social-icon"><img src="/image/sugar_5940015.png" alt="Facebook"></a>
+                        <a href="https://www.youtube.com/@TV-qf2ki/videos" class="social-icon"><img src="/image/youtube_3938026.png" alt="YouTube"></a>
+                        <a href="https://www.instagram.com/gymnasium_mstislav/" class="social-icon"><img src="/image/instagram_2111463.png" alt="Instagram"></a>
+                    </div>
+                  </div>
+            </div>
+         </section>
+        
+        
+        
+       <section id="контакты" class="page page-контакты">
+           <div class="container">
+                <h2 class="section-title">Контакты</h2>
+                 <div class="contact-form">
+                <h3>Форма обратной связи</h3>
+                <form>
+                    <input type="text" placeholder="Имя" class="input-field">
+                    <input type="email" placeholder="Email" class="input-field">
+                   <textarea placeholder="Сообщение" class="input-field"></textarea>
+                  <button type="submit" class="button">Отправить</button>
+                </form>
+              </div>
+              <div class="contact-info">
+                <h3>Контактная информация</h3>
+                <p><strong>Разработчик</strong> Поляков Даниил 11 класс</p>
+                <p><strong>Email:</strong> lamesbong@gmail.com</p>
+                 <p><strong>Телефон:</strong> +375(29)12-345-678-9</p>
+                <p><strong>Адрес:</strong> г. Мстиставль, ул Школьная Гимназия 3</p>
+                   <div class="social-links">
+                        <a href="http://gymn.mstislavl.edu.by/main.aspx?ysclid=m6jg10pdgp131702128" class="social-icon"><img src="/image/sugar_5940015.png" alt="Official site"></a>
+                        <a href="https://www.youtube.com/@TV-qf2ki/videos" class="social-icon"><img src="/image/youtube_3938026.png" alt="YouTube"></a>
+                        <a href="https://www.instagram.com/gymnasium_mstislav/" class="social-icon"><img src="/image/instagram_2111463.png" alt="Instagram"></a>
+                  </div>
+            </div>
+                 <div class="map">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.215455304535!2d37.61769871746724!3d55.755825978585036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afb73d4ee15%3A0x2f907971c42485e1!2z0JzQvtGB0LrQstC10L3RgdC60LjQuSDQstCw0LvQuNC90LAg0YPQuy4sIDEsINCc0L7RgdC00L7QsdC-0YIgMTA5MDEy!5e0!3m2!1sru!2sru!4v1685715454925!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                 </div>
+            </div>
+        </section>
+        
+
+    </main>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   <script src="/js/game.js"></script>
+    
+    
+</body>
+</html>
